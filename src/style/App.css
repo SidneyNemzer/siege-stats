@@ -1,0 +1,121 @@
+.App {
+  height: 100%;
+}
+
+
+.paste-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.paste-box::after {
+  content: "";
+  background-image: url('https://i.imgbox.com/k2J8y97P.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.paste-box h1 {
+  text-align: center;
+  font-size: 100px;
+  color: #fff;
+  text-shadow: 3px 0 4px #000, 0 -3px 4px #000, 0 3px 4px #000, -3px 0 4px #000;
+}
+
+.paste-box.pasted {
+  display: block;
+  background-color: #121318;
+  text-align: center;
+  padding: 50px;
+}
+.paste-box.pasted h2 {
+  font-size: 40px;
+  color: white;
+  margin: 0 0 20px;
+}
+.paste-box.pasted img {
+  width: 60%;
+  margin: 0 0 20px;
+}
+.paste-box.pasted .options {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.paste-box.pasted .options button {
+  margin-left: 10px;
+}
+
+
+.loader {
+  text-align: center;
+  background-color: #121318;
+  height: 100%;
+  color: white;
+  padding: 50px;
+}
+.loader h2 {
+  margin: 0 0 10px;
+  font-size: 60px;
+}
+.loader h3 {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+.loader .progress-wrapper {
+  height: 50px;
+  width: 50%;
+  margin: auto;
+  background-color: #292b36;
+}
+.loader .progress-bar {
+  background-color: white;
+  height: 100%;
+  transition: width 0.4s;
+}
+
+
+.verify {
+  text-align: center;
+  background-color: #121318;
+  height: 100%;
+  padding: 40px;
+}
+.verify h1 {
+  color: white;
+  margin: 0 0 20px;
+  font-size: 40px;
+}
+.verify canvas {
+  margin: 0 0 20px;
+}
+.verify input {
+  font-size: 30px;
+}
+.verify button {
+  padding: 10px;
+}
+
+
+.info {
+  display: flex;
+  justify-content: center;
+  background-color: #121318;
+  color: white;
+  height: 100%;
+  padding: 40px;
+  font-size: 1.5em;
+}
+.info .friendly {
+  padding-right: 10%;
+}
+.info .error {
+  color: red;
+}
